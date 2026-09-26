@@ -9,5 +9,6 @@ import 'package:source_gen/source_gen.dart';
 
 import 'generator.dart';
 
+/// Builder for env
 Builder envBuilder(BuilderOptions options) =>
-    SharedPartBuilder([EnvStringGenerator(), EnvIntGenerator()], 'env');
+    SharedPartBuilder([$EnvStringGenerator(), $EnvIntGenerator()], 'env');

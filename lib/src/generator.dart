@@ -46,14 +46,16 @@ abstract class _EnvGeneratorBase<T> extends GeneratorForAnnotation<T> {
   String gen(String rhsName, String? envName);
 }
 
-class EnvStringGenerator extends _EnvGeneratorBase<Env> {
+/// String env variable generator
+class $EnvStringGenerator extends _EnvGeneratorBase<Env> {
   @override
   String gen(String rhsName, String? envName) =>
-      'const $rhsName = EnvVarString(\'$envName\', String.fromEnvironment(\'$envName\'));';
+      'const $rhsName = \$EnvVarString(\'$envName\', String.fromEnvironment(\'$envName\'));';
 }
 
-class EnvIntGenerator extends _EnvGeneratorBase<EnvInt> {
+/// Int env variable generator
+class $EnvIntGenerator extends _EnvGeneratorBase<EnvInt> {
   @override
   String gen(String rhsName, String? envName) =>
-      'const $rhsName = EnvVarInt(\'$envName\', String.fromEnvironment(\'$envName\'));';
+      'const $rhsName = \$EnvVarInt(\'$envName\', String.fromEnvironment(\'$envName\'));';
 }

@@ -4,6 +4,8 @@
  * All rights reserved.
  */
 
+// ignore_for_file: public_member_api_docs
+
 // ignore_for_file: constant_identifier_names
 
 import 'package:env_annotation/env_annotation.dart';
