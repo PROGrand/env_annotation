@@ -1,6 +1,6 @@
 builders:
-  env_var:
-    import: "package:env_var/env_var.dart"
+  env_annotation:
+    import: "package:env_annotation/env_annotation.dart"
     builder_factories: [ "envBuilder" ]
     build_extensions: { ".dart": [ ".env.g.part" ] }
     auto_apply: dependents

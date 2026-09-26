@@ -1,4 +1,4 @@
-# env_var
+# env_annotation
 
 @env annotation generator.
 
@@ -6,7 +6,7 @@
 
 ```yaml
 dependencies:
-  env_var: ^1.0.0
+  env_annotation: ^1.0.0
 dev_dependencies:
   build_runner: ^2.4.0
 ```
@@ -23,7 +23,7 @@ value.
 ## Example
 
 ```dart
-import 'package:env_var/env_var.dart';
+import 'package:env_annotation/env_annotation.dart';
 
 part 'file.g.dart';
 

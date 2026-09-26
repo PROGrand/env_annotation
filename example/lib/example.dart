@@ -6,7 +6,7 @@
 
 // ignore_for_file: constant_identifier_names
 
-import 'package:env_var/env_var.dart';
+import 'package:env_annotation/env_annotation.dart';
 
 part 'example.g.dart';
 
